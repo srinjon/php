@@ -1,0 +1,20 @@
+<?php
+$fruit = ['Orange','Banana','Apple','Grape','Guava','Potato'];
+$newarr=array_rand($fruit);
+echo "<pre>";
+// print_r($newarr);
+echo "</pre>";
+echo $fruit[$newarr];
+$fruit = ['a'=>'Orange','b'=>'Banana','c'=>'Apple','d'=>'Grape','e'=>'Banana'];
+$newarr=array_rand($fruit,2);
+echo "<pre>";
+print_r($newarr);
+echo "</pre>";
+// echo $fruit[$newarr];
+// echo $fruit[$newarr[0]]."<br>";
+// echo $fruit[$newarr[1]];
+$fruit = ['a'=>'Orange','b'=>'Banana','c'=>'Apple','d'=>'Grape','e'=>'Banana'];
+shuffle($fruit);
+echo "<pre>";
+print_r($fruit);
+echo "</pre>";

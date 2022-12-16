@@ -1,0 +1,23 @@
+<?php
+$fruit = ['Orange','Banana','Apple','Grape'];
+$food = ['Rice','Daal'];
+$color=['Orange','Yellow','Red'];
+$merge=array_merge($fruit,$food,$color);
+echo "<pre>";
+print_r($merge);
+echo "</pre>";
+$fruit = ['a'=>'Orange','b'=>'Banana','c'=>'Apple','d'=>'Grape'];
+$food = ['b'=>['Color'=>['red','blue','green']],'Daal'];
+$color=['Orange','Yellow','Red'];
+// $merge=array_merge($fruit,$food,$color);
+// $merge = $fruit+$food+$color;
+$merge = array_merge_recursive($fruit,$food);
+echo "<pre>";
+print_r($merge);
+echo "</pre>";
+$name = ['Orange','Banana','Apple','Grape'];
+$price = ['28','30','50','15'];
+$merge=array_combine($name,$price);
+echo "<pre>";
+print_r($merge);
+echo "</pre>";
